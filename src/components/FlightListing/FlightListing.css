@@ -1,0 +1,28 @@
+/* FlightListing.css */
+
+.flight-listing-container {
+    margin-top: 20px;
+  }
+  
+  .flight-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .flight-table th,
+  .flight-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .flight-table th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Optional: Add hover effect on table rows */
+  .flight-table tbody tr:hover {
+    background-color: #f5f5f5;
+  }
+  
