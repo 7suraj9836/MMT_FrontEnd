@@ -19,7 +19,7 @@ export const signUpUser = createAsyncThunk(
       const result = await response.json();
       console.log("Data received...", result);
       return result;
-    } catch (error) {
+    } catch (error) {             
       return rejectWithValue(error.message);
     }
   }

@@ -104,7 +104,13 @@ const SearchForm = () => {
       await dispatch(searchFlights(values));
 
       // Redirect to the flight listing page
-      navigate('/flightListing');
+      navigate('/dashboard/flightListing',{
+        state:{
+          from:values.from,
+          to:values.to,
+          date:values.date
+        }
+      });
     } catch (error) {
       // Handle errors, if needed
       console.error('Error:', error);
